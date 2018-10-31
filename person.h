@@ -17,7 +17,11 @@ public:
 	void getAffluence();
 
 //set methods
-	void setMode(); //may not be neccesarry
+	void setMode();
+
+	void step();
+	
+	
 
 
 #endif /* HUMAN_H_ */
