@@ -1,0 +1,20 @@
+% script for plotting agent based modelling results
+
+M = csvread('example.csv',1,0);
+
+% display(M)
+
+%% plotting normalised values
+close all
+subplot(2,1,1);
+plot(M(:,1)/mean(M(:,1)))
+hold on 
+plot(M(:,2)/mean(M(:,2)))
+hold on 
+plot(M(:,3)/mean(M(:,3)))
+legend('Bike','Car','Walk')
+subplot(2,1,2);
+plot(M(:,1)/mean(M(:,1)))
+legend('Bike','Car','Walk')
+
+%%
